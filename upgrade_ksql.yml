@@ -29,7 +29,7 @@
 
     - name: Set Current Package Version
       set_fact:
-        ksql_current_version: "{{ ansible_facts.packages['confluent-ksqldb'][0]['version'] }}"
+        ksql_current_version: "{{ ansible_facts.packages['confluent-ksql'][0]['version'] }}"
 
     - debug:
         msg: "Current version: {{ksql_current_version}}   Upgrade to version: {{confluent_package_version}}"

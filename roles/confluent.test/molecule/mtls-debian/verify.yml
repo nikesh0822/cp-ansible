@@ -157,7 +157,7 @@
         name: confluent.test
         tasks_from: check_property.yml
       vars:
-        file_path: /etc/ksqldb/ksql-server.properties
+        file_path: /etc/ksql/ksql-server.properties
         property: security.protocol
         expected_value: SSL
 
@@ -165,7 +165,7 @@
         name: confluent.test
         tasks_from: check_property.yml
       vars:
-        file_path: /etc/ksqldb/ksql_jolokia.properties
+        file_path: /etc/ksql/ksql_jolokia.properties
         property: authMode
         expected_value: basic
 
